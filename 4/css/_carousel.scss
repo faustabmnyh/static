@@ -1,0 +1,28 @@
+.carousel {
+  max-height: 100vh;
+  position: relative;
+  img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  button {
+    position: absolute;
+    z-index: 1;
+    bottom: 10%;
+    left: 50%;
+    width: 250px;
+    height: 40px;
+    transform: translate(-50%);
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    transition: all 0.5s ease;
+    &:hover {
+      bottom: 12%;
+    }
+  }
+}

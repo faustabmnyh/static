@@ -1,0 +1,93 @@
+body {
+    font: 18px/32px arial;
+    background-color: gray;
+}
+
+.topbar {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    box-shadow: 0px 5px 10px 3px black;
+    z-index: 9999;
+}
+.topbar h1 {
+    text-align: center;
+    font: 40px 'do_hyeonregular';
+	margin: 30px 0;
+	text-shadow: -10px 8px 1px rgba(0, 0, 0,0.5);
+}
+
+.topbar .logo1 {
+	position: absolute;
+	margin: 10px 70px;
+	border-radius: 50%;
+	background-position: 0.4px 0;
+	border: 2px solid black;
+	box-shadow: 0px 0px 2px 2px black;
+	width: 80px;
+	height: 80px;
+	background-image: url(../img/saitama2.jpg);
+	background-size: cover;
+}
+.topbar .logo2 {
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin: 10px 70px;
+	border-radius: 50%;
+	background-position: 0.4px 0;
+	border: 2px solid black;
+	box-shadow: 0px 0px 2px 2px black;
+	width: 80px;
+	height: 80px;
+	background-image: url(../img/saitama2.jpg);
+	background-size: cover;
+}
+
+.container1 {
+	width: 800px;
+	top: 120px;
+	margin-left: 10px;
+	position: relative;
+	float: left;
+	background-color: white;
+	border-radius: 8px;
+}
+.container2 {
+	width: 400px;
+	top: 120px;
+	position: relative;
+	float: right;
+	background-color: white;
+	border-radius: 8px;
+	margin-right: 10px;
+}
+
+.container2 h2 {
+	text-align: center;
+}
+.container2 .garis {
+	width: 400px;
+	height: 10px;
+	background-color: black;
+}
+
+.container1 h2,
+.container2 h2 {
+	font-size: 28px;
+	font-weight: bold;
+	margin: 10px;
+}
+
+img {
+	border-top: 5px solid tomato;
+	width: 800px;
+	height: 450px;
+	border-bottom: 5px solid sienna;
+}
+
+
+

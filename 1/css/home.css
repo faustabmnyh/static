@@ -1,0 +1,85 @@
+body {
+    font: 18px/32px arial;
+    background-color: gray;
+}
+.topbar {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    box-shadow: 0px 5px 10px 3px black;
+    z-index: 9999;
+}
+.topbar h1 {
+    text-align: center;
+    font: 40px 'do_hyeonregular';
+	margin: 30px 0;
+	text-shadow: -10px 8px 1px rgba(0, 0, 0,0.5);
+}
+
+.topbar .logo1 {
+	position: absolute;
+	margin: 10px 70px;
+	border-radius: 50%;
+	background-position: 0.4px 0;
+	border: 2px solid black;
+	box-shadow: 0px 0px 2px 2px black;
+	width: 80px;
+	height: 80px;
+	background-image: url(../saitama/img/saitama2.jpg);
+	background-size: cover;
+}
+.topbar .logo2 {
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin: 10px 70px;
+	border-radius: 50%;
+	background-position: 0.4px 0;
+	border: 2px solid black;
+	box-shadow: 0px 0px 2px 2px black;
+	width: 80px;
+	height: 80px;
+	background-image: url(../saitama/img/saitama2.jpg);
+	background-size: cover;
+}
+.header h1 {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px;
+}.navigasi, .container {
+    position: relative;
+    top: 120px;
+    box-shadow: 0px 0px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.navigasi {
+    width: 1000px;
+    margin: auto;
+    background-color: black;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.header .navigasi li  {
+    display: inline-block;
+    padding: 4px;
+}
+
+.navigasi a {
+    margin: 0 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+.container {
+    width: 1000px;
+    margin: auto;
+    background-color: wheat;
+}
+
+.container p {
+    padding: 5px;
+}

@@ -1,0 +1,263 @@
+body {
+    font: 18px/32px arial;
+    background-color: gray;
+}
+.topbar {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    box-shadow: 0px 5px 10px 3px black;
+    z-index: 9999;
+}
+.topbar h1 {
+    text-align: center;
+    font: 40px 'do_hyeonregular';
+	margin: 30px 0;
+	text-shadow: -10px 8px 1px rgba(0, 0, 0,0.5);
+}
+
+.topbar .logo1 {
+	position: absolute;
+	margin: 10px 70px;
+	border-radius: 50%;
+	background-position: 0.4px 0;
+	border: 2px solid black;
+	box-shadow: 0px 0px 2px 2px black;
+	width: 80px;
+	height: 80px;
+	background-image: url(../saitama/img/saitama2.jpg);
+	background-size: cover;
+}
+.topbar .logo2 {
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin: 10px 70px;
+	border-radius: 50%;
+	background-position: 0.4px 0;
+	border: 2px solid black;
+	box-shadow: 0px 0px 2px 2px black;
+	width: 80px;
+	height: 80px;
+	background-image: url(../saitama/img/saitama2.jpg);
+	background-size: cover;
+}
+.header h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 20px;
+    margin-top: 130px;
+    filter: drop-shadow(0px 0px 2px 3px white);
+}
+.navigasi, .container {
+    position: relative;
+    top: 120px;
+    box-shadow: 0px 0px 1px 3px rgba(0, 0, 0, 0.7);
+}
+.navigasi {
+    width: 1000px;
+    margin: auto;
+    background-color: black;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.header .navigasi li  {
+    display: inline-block;
+    padding: 4px;
+}
+
+.navigasi a {
+    margin: 0 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+.container {
+    width: 1000px;
+    margin: auto;
+    background-color: wheat;
+    position: relative;
+    padding: 20px 0;
+}
+
+.gallery .luar {
+    width: 100px;
+    height: 100px;
+    float: left;
+    overflow: hidden;
+    border: 3px solid black;
+    position: relative;
+    margin: 10px;
+    margin-left: 42px;
+}
+
+.gallery .luar,
+.gallery li span {
+    border-radius: 50%;
+}
+.container h2 {
+    font-size: 24px;
+    margin-left: 42px;
+    font-weight: bold;
+}
+
+.luar span{
+    position: absolute;
+    display: block;
+    text-align: center;
+    line-height: 100px;
+    background-color: rgba(0, 0, 0,0.5);
+    color: white;
+    top: 0;
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+    font-size: 14px;
+}
+.gallery .luar a:hover span {
+    opacity: 1;
+    transform: scale(1) rotate(720deg);
+    transition: 0.6s;
+}
+
+/* Overlay */
+.overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0,0);
+    text-align: center;
+    padding: 120px 0;
+}
+
+.overlay:target {
+    width: auto;
+    height: auto;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0,.65);
+}
+
+.overlay img {
+    max-height: 100%; /*ini akan maksimal sesuai dgn tinggi si window*/
+    box-shadow: 2px 2px 4px rgba(0, 0, 0,.6);
+    transition: 1s;
+}
+
+.overlay:target img {
+    animation: zoomDanFade 0.6s;
+}
+
+.overlay .close {
+    position: absolute;
+    top: 110px;
+    right: 50%;
+    margin-right: 135px;
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 8px;
+    padding: 5px;
+    font-size: 13px;
+    opacity: 0;
+    box-shadow: 0px 0px 3px 2px black;
+}
+
+.overlay .about {
+    position: absolute;
+    margin-right: -45px;
+    right: 50%;
+    bottom: 65px;
+    background-color: white;
+    text-decoration: none;
+    padding: 3px;
+    font-weight: bold;
+    color: black;
+    font-size: 14px;
+    line-height: 15px;
+    opacity: 0;
+    box-shadow: 0px 0px 2px 1px black;
+}
+
+.overlay:target .close ,
+.overlay:target .about {
+    animation: slideDownFade 0.7s 0.5s forwards;
+}
+.overlay:target .kiri,
+.overlay:target .kanan,
+.overlay:target .dalem a{
+    animation: fade 0.5s 0.5s forwards;
+}
+
+.kanan , .kiri{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    margin-left: 30px;
+    background-image: url(../img/arah/kanan.png);
+    top: 42%;
+    filter: drop-shadow(3px 3px 1px white);
+    opacity: 0;
+}
+.kiri {
+    background-image: url(../img/arah/kiri.png);
+    margin-left: -120px;
+}
+
+.dalem {
+    display: inline-block;
+}
+.dalem a{
+    display: block;
+    margin: 0 5px;
+    width: 10px;
+    height: 10px;
+    text-decoration: none;
+    text-indent: 9999px;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0;
+}
+.dalem a:hover{
+    width: 15px;
+    height: 15px;
+}
+
+/* animasi */
+@keyframes zoomDanFade {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@keyframes slideDownFade {
+    0% {
+        opacity: 0;
+        margin-top: -20px;
+    }
+    100% {
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

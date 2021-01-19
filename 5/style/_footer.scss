@@ -1,0 +1,17 @@
+footer {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  p {
+    font-size: 14px;
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
+  }
+  img {
+    object-fit: contain;
+    width: 100%;
+    max-width: 20px;
+  }
+}

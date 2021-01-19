@@ -1,0 +1,427 @@
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  background: white;
+  background-image: url(../images/mainimage.png);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: 110% 0;
+}
+
+@media (max-width: 1000px) {
+  body {
+    background-size: 800px;
+    background-position: 200px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    background-size: 800px;
+    background-position: 0 0;
+  }
+}
+
+.navbar-brand {
+  font-family: "rubik", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 28px;
+  margin-left: -16px;
+}
+
+@media (max-width: 600px) {
+  .navbar-brand {
+    font-size: 20px;
+  }
+}
+
+.nav-item {
+  font-family: "Montserrat", sans-serif;
+}
+
+.jumbo {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 1;
+  margin-bottom: 200px;
+}
+
+.jumbo .jumbo__text {
+  width: 380px;
+}
+
+@media (max-width: 1000px) {
+  .jumbo .jumbo__text {
+    width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .jumbo .jumbo__text {
+    width: 250px;
+  }
+}
+
+.jumbo .jumbo__text .jumbo__header {
+  font-family: "rubik", sans-serif;
+  font-size: 60px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1000px) {
+  .jumbo .jumbo__text .jumbo__header {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .jumbo .jumbo__text .jumbo__header {
+    font-size: 40px;
+  }
+}
+
+.jumbo .jumbo__text .jumbo__header span {
+  color: #fe9131;
+}
+
+@media (max-width: 768px) {
+  .jumbo .jumbo__text p {
+    font-size: 14px;
+  }
+}
+
+.jumbo .jumbo__text .jumbo__btn {
+  width: 150px;
+  background: #ff6007;
+  color: white;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+
+.prog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.prog .prog__mainCard {
+  border-radius: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 5px;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.295);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.295);
+}
+
+.prog .prog__title {
+  font-size: 45px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .prog .prog__title {
+    font-size: 35px;
+  }
+}
+
+.prog .prog__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.prog .prog__card img {
+  max-width: 100%;
+}
+
+.prog .prog__card h4 {
+  font-size: 20px;
+}
+
+.prog .prog__card p {
+  font-size: 16px;
+  color: gray;
+}
+
+@media (max-width: 768px) {
+  .prog .prog__res {
+    margin: 0 10px;
+  }
+}
+
+.price {
+  margin-top: -150px;
+  z-index: 0;
+  background: #ff630b;
+  height: 150vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .price {
+    height: 330vh;
+  }
+}
+
+.price h2 {
+  margin-top: 200px;
+  text-transform: uppercase;
+  color: white;
+  font-family: "rubik", sans-serif;
+  font-weight: bold;
+}
+
+.price .price__choose {
+  font-size: 16px;
+  color: white;
+  font-family: "rubik", sans-serif;
+}
+
+.price .satu {
+  margin-right: -25px;
+}
+
+@media (max-width: 768px) {
+  .price .satu {
+    margin-right: 0;
+  }
+}
+
+.price .tiga {
+  margin-left: -25px;
+}
+
+@media (max-width: 768px) {
+  .price .tiga {
+    margin-left: 0;
+  }
+}
+
+.price .price__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #f3f0f0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px 10px;
+  height: 500px;
+  -webkit-box-shadow: 0px 30px 20px -20px rgba(0, 0, 0, 0.274);
+          box-shadow: 0px 30px 20px -20px rgba(0, 0, 0, 0.274);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .price .price__card {
+    margin-bottom: 15px;
+  }
+}
+
+.price .price__card:hover {
+  background: white;
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
+  z-index: 1;
+  position: relative;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 70px 20px -40px rgba(0, 0, 0, 0.281);
+          box-shadow: 0px 70px 20px -40px rgba(0, 0, 0, 0.281);
+}
+
+.price .price__card img {
+  max-width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+@media (max-width: 990px) {
+  .price .price__card img {
+    max-width: 70%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+.price .price__card .price__cardTitle {
+  text-transform: uppercase;
+  font-size: 22px;
+  letter-spacing: 6px;
+  text-align: center;
+}
+
+@media (max-width: 990px) {
+  .price .price__card .price__cardTitle {
+    font-size: 18px;
+  }
+}
+
+.price .price__card .price__cardPrice {
+  text-align: center;
+  color: #ff630b;
+  font-family: "rubik", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+@media (max-width: 990px) {
+  .price .price__card .price__cardPrice {
+    font-size: 16px;
+  }
+}
+
+.price .price__card .price__priceDesc {
+  font-size: 16px;
+  color: gray;
+  text-align: center;
+}
+
+@media (max-width: 990px) {
+  .price .price__card .price__priceDesc {
+    font-size: 14px;
+  }
+}
+
+.price .price__card .price__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  -ms-flex-item-align: center;
+      align-self: center;
+  background: #ff9100;
+  width: 150px;
+  height: 30px;
+  border-radius: 30px;
+  font-weight: 500;
+  font-family: "montserrat",sans-serif;
+}
+
+@media (max-width: 990px) {
+  .price .price__card .price__button {
+    font-size: 12px;
+  }
+}
+
+.teach {
+  background: #F0EDED;
+}
+
+.teach .teach__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.teach img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.teach .info__btn {
+  width: 120px;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  text-align: center;
+  line-height: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 10px;
+  background: #FF6007;
+  color: white;
+}
+
+footer {
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  footer p {
+    font-size: 12px;
+  }
+}
+
+footer img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  max-width: 20px;
+}
+/*# sourceMappingURL=style.css.map */

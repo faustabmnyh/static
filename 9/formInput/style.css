@@ -1,0 +1,27 @@
+body {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.main-input {
+  margin: auto;
+  position: relative;
+  padding: 20px;
+}
+
+.input {
+  outline: none;
+  border: none;
+  border-bottom: 1px tomato solid;
+}
+
+span {
+  position: absolute;
+  top: 0;
+}

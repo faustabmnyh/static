@@ -1,0 +1,220 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* style */
+
+body {
+    font: 16px/24px arial;
+    background-color: gray;
+    background-image: url(img/oriental-tiles.png);
+}
+.container {
+    width: 1000px;
+    margin: 80px auto;
+    background-color: white;
+    position: relative;
+}
+
+.header h1 {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+    padding-top: 15px;
+    margin-bottom: 5px;
+}
+.navigasi {
+    background-color: rgb(29, 18, 18);
+    padding-left: 0px;
+    border-bottom: 3px solid gray;
+    border-top: 3px solid gray;
+}
+.navigasi ul li {
+    display: inline-block;
+    padding: 10px;
+    margin-left: -10px;
+}
+.navigasi a {
+    text-decoration: none;
+    padding: 13px;
+    color: blue;
+}
+
+.navigasi a:hover {
+    background-color: black;
+}
+
+.img {
+    background-image: url(img/king2.jpg);
+    height: 500px;
+    background-size: cover;
+    border-bottom: 3px solid gray;
+    background-repeat: no-repeat;
+}
+.main {
+    float: left;
+    width: 600px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: 26px;
+    font-weight: bold;
+}
+.main  a {
+    text-decoration: none;
+}
+.main .penulis {
+    margin-bottom: 20px;
+    font-size: 12px;
+    text-indent: 0px;
+}
+
+.main p {
+    text-indent: 20px;
+    margin-bottom: 10px;
+    width: 500px;
+    text-align: justify;
+}
+.footer {
+    background-color: black;
+    height: 40px;
+}
+.footer .copy {
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 12px;
+}
+.sidebar {
+    float: right;
+    width: 300px;
+    margin: 20px;
+    box-sizing: border-box;
+}
+.sidebar img {
+    width: 100px;
+    height: 120px;
+    margin-right: 8px;
+    float: left;
+}
+.sidebar p {
+    font-size: 13px;
+    padding: 5px;
+}
+.sidebar h3 {
+    font-weight: bold;
+    margin-left: 40px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    margin: 8px;
+}
+.artikel h4 {
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.sidebar .artikel .saitama a{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin-top: 12px;
+    background-image: url(img/saitama.jpg);
+    background-size: cover;
+    background-position: -30px 0px;
+    background-repeat: no-repeat;
+    border: 2px solid black;
+}
+
+.ig {
+    width: 200px;
+    height: 200px;
+    background-image: url(img/—Pngtree—instagram\ icon\ logo_3560508.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    /* biar tulisannya ilang menggunakan text indent(supaya ilang) tetapi ini kurang jos diweb lain */
+    position: absolute;
+    top: -44px;
+    right: -12px;
+}
+
+.topbar {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    height: 40px;
+    background-color: gray;
+    z-index: 9999;
+}
+
+/* clearfix */
+.cf:before,
+.cf:after {
+    content: " "; 
+    display: table; 
+}
+
+.cf:after {
+    clear: both;
+}
+ 
+.cf {
+    *zoom: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

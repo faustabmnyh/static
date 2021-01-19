@@ -1,0 +1,25 @@
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  background: white;
+  background-image: url(../images/mainimage.png);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: 110% 0;
+  @media (max-width: 1000px) {
+    background-size: 800px;
+    background-position: 200px 0;
+  }
+  @media (max-width: 768px) {
+    background-size: 800px;
+    background-position: 0 0;
+  }
+}
+
+@import "nav";
+@import "jumbotron";
+@import "prog";
+@import "price";
+@import "teach";
+@import "footer";
