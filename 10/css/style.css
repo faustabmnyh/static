@@ -1,0 +1,30 @@
+html {
+    /*  kita menggunakan ini biar smooth 
+    dan lebih mudah gapake jquery */
+    scroll-behavior: smooth;
+     /*untuk padding biar ga mentok */
+    scroll-padding: 50px; 
+}
+
+section {
+    min-height: 600px;
+}
+
+.navbar-brand {
+    font-family: "vigaregular";
+}
+
+.jumbotron img {
+    width: 150px;
+}
+
+.jumbotron h1 {
+    font-size: 40px;
+}
+
+
+@media (min-width: 992px) { 
+    .jumbotron img {
+        width: 200px;
+    }
+}
